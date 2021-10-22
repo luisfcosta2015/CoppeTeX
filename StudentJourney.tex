@@ -26,7 +26,7 @@
 %%   Grave accent  \`     Left brace    \{     Vertical bar  \|
 %%   Right brace   \}     Tilde         \~}
 %%
-\documentclass[dsc,numbers]{coppe}
+\documentclass[dsc]{coppe}
 \usepackage{amsmath,amssymb}
 \usepackage{hyperref}
 
@@ -82,6 +82,7 @@
 
   \mainmatter
   \chapter{Introdu{\c c}\~ao}
+  \include{chaps/trabalhos_relacionados}
 
   Segundo a norma de formata{\c c}\~ao de teses e disserta{\c c}\~oes do
   Instituto Alberto Luiz Coimbra de P\'os-gradua{\c c}\~ao e Pesquisa de
@@ -103,7 +104,7 @@
   included the determination of the effect of object thickness on image quality,
   the defining of minimum levels of detectability and a preliminary investigation
   of a means whereby the degree of corrosion could be quantified with neutron
-  radiographic data. \cite{article-example}
+  radiographic data. 
   \end{longquote}
 
   \chapter{Revis\~ao Bibliogr\'afica}
@@ -125,20 +126,22 @@
     \hline
     Tipo da Publica{\c c}\~ao & \verb|\cite| & \verb|\citet|\\
     \hline
-    Livro & \cite{book-example} & \citet{book-example}\\
-    Artigo & \cite{article-example} & \citet{article-example}\\
-    Relat\'orio & \cite{techreport-example} & \citet{techreport-example}\\
-    Relat\'orio & \cite{techreport-exampleIn} & \citet{techreport-exampleIn}\\
-    Anais de Congresso & \cite{inproceedings-example} &
-      \citet{inproceedings-example}\\
-    S\'eries & \cite{incollection-example} & \citet{incollection-example}\\
-    Em Livro & \cite{inbook-example} & \citet{inbook-example}\\
-    Disserta{\c c}\~ao de mestrado & \cite{mastersthesis-example} &
-      \citet{mastersthesis-example}\\
-    Tese de doutorado & \cite{phdthesis-example} & \citet{phdthesis-example}\\
+    Livro &  & \\
+    Artigo &  & \\
+    Relat\'orio &  & \\
+    Relat\'orio &  & \\
+    Anais de Congresso &  &
+     \\
+    S\'eries & & \\
+    Em Livro & & \\
+    Disserta{\c c}\~ao de mestrado &  &
+      \\
+    Tese de doutorado &  & \\
     \hline
   \end{tabular}}
   \end{table}
+
+\chapter{Trabalhos Relacionados}
 
   \chapter{M\'etodo Proposto}
   \chapter{Resultados e Discuss\~oes}
@@ -146,7 +149,7 @@
 
   \backmatter
   \bibliographystyle{coppe-unsrt}
-  \bibliography{example}
+  \bibliography{tese}
 
   \appendix
   \chapter{Algumas Demonstra{\c c}\~oes}
