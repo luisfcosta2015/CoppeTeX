@@ -149,6 +149,77 @@ Todo o rearranjo de ações necessário deve ser detalhado com precisão em uma 
 
 Uma narrativa que ajuda a “Definir a atmosfera do jogo e estabelecer as bases do investimento emocional e da curiosidade junto com o jogador" \citep{clarke_escaped_2017} é uma peça importante no projeto de EEG. No nosso caso, um personagem foi criado: Anita, uma estudante de Ciência da Computação que adora EG. Em EscapulISTe? -LP, estudantes se reuniram no quarto de Anita para estudar Lógica. Eventualmente, eles adormecem. Então acordam para descobrir que Anita os trancou e deixou vários desafios de LP que eles precisam resolver para escapar da sala. Eles têm uma hora para fazer isso, ou será tarde demais para o exame. O EscapulISTe? -LP foi implementado no final do semestre e antes do primeiro exame. Portanto, os alunos podem relembrar os principais tópicos antes de se preparar para o exame e testar seus conhecimentos prévios.
 
+Em relação ao EscapulISTe? -LA, Anita fica trancada dentro do armário enquanto prepara um EEG sobre LA. Ela manda um e-mail pedindo ajuda. Os estudantes devem resolver os desafios para abrir o armário e ter uma hora para fazê-lo, ou ela não conseguirá respirar e morrer. EscapulISTe? -LA foi planejado para ser implementado antes do teste intermediário. Essa escolha se baseou em dois motivos. Em primeiro lugar, os desafios estavam relacionados aos conceitos algébricos que possuem saídas numéricas. O segundo motivo para esse planejamento foi pedagógico - no momento do teste de meio de semestre, os alunos geralmente estão sobrecarregados com os projetos de outros cursos e têm um desempenho pior, em comparação com o primeiro teste.
+
+\subsection{Scenario design}
+
+Todos os elementos do EEG devem ser integrados em um conjunto coerente que promova uma experiência envolvente e significativa. O espaço físico e a narrativa devem ser combinados, com a ajuda de decorações e objetos \citep{guigon_model_2018}, para criar um enredo plausível. Nosso primeiro desafio foi criar uma sala de Anita confiável. Isso foi possível com a doação de diversos móveis. Além disso, definimos traços em relação à “personalidade” de Anita: ela adora a seleção nacional de futebol, livros e Harry Potter. Detalhes da decoração como uma foto da seleção nacional e uma camiseta de Harry Potter foram introduzidos. O cenário para LP pode ser visto na Figura 2.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=.9\textwidth]{chaps/Images/Figura2(1).jpeg}
+    \caption{Quarto da Anita}
+    \label{fig:quarto_anita}
+\end{figure}
+
+\subsection{Challenges conception}
+
+Ao contrário do que se pode constatar no EG ao vivo e dados os objetivos pedagógicos, é contraproducente o aluno perder tempo com pistas falsas. Assim, em ambas as implementações, os alunos tiveram cinco exercícios para resolver, explicitamente numerados. Posteriormente, foi definido o fluxo dos cinco desafios, determinando, por exemplo, que o primeiro abrisse o armário X que permitiria aos alunos o acesso ao segundo desafio, com uma ordem estrita de ações. As fechaduras estavam presas a um carrinho, uma mochila, uma maleta e duas caixas. Alguns deram chaves para abrir a gaveta da mesinha de cabeceira ou do guarda-roupa, onde os alunos encontravam os exercícios escritos.
+
+A integração do EEG em áreas não numéricas pode representar um desafio adicional, pois as soluções para abrir as fechaduras são geralmente numéricas \citep{guigon_model_2018}. Em nossa experiência, mesmo em cursos STEM, às vezes o tipo de exercícios não se ajusta precisamente a uma meta numérica. Sempre é possível, em qualquer conteúdo, adotar uma abordagem criativa onde as palavras se transformam em números e explorar outras maneiras de desbloquear fechaduras.
+
+\subsection{Exercises creation}
+
+Após a definição do número de desafios e seu fluxo, os especialistas em conteúdo criaram os exercícios para seu tópico de especialização, considerando as orientações fornecidas pelo designer. A concepção dos exercícios baseou-se nos objetivos de aprendizagem traçados para o EEG. Para álgebra linear (EscapulISTe? -LA), por exemplo, cinco objetivos de aprendizagem foram estabelecidos:
+
+\begin{itemize}
+    \item Manipulando equações da matriz
+    \item Inversos de matriz de computação
+    \item Aplicação de propriedades de matrizes de Markov
+    \item Determinantes de computação
+    \item Manipulação de matrizes particionadas
+\end{itemize}
+
+Em seguida, foram preparados diferentes exercícios de álgebra de matrizes, matrizes inversas, matrizes de bloco e determinantes. Aqui estão dois exemplos de exercícios específicos:
+
+\begin{itemize}
+    \item Considere a matriz simétrica [fornecida explicitamente]. Você precisará descobrir as entradas da terceira coluna da matriz inversa.
+    \item Considere a matriz de Markov [fornecida explicitamente com três entradas ausentes] com o vetor estacionário .... (OOPS, você precisa descobrir!). A chave que você precisa encontrar é composta pelas entradas ausentes na matriz.
+\end{itemize}
+
+Para EscapulISTe? -LP, os exercícios propostos progrediram da dedução natural e representação lógica de primeira ordem para diagramas de decisão binários ordenados. Além disso, um programa em Prolog (com um bug) foi fornecido. Quando o bug foi corrigido, um número foi retornado e os alunos puderam acessar o próximo desafio.
+
+\subsection{Challenges scenario integration}
+
+Inúmeras ideias de desafios podem ser implementadas. Aqui são três exemplos usados no projeto atual:
+
+\begin{itemize}
+    \item Um dos números abre uma caixa com um ímã dentro. Este ímã permite que os alunos removam uma chave no fundo de uma caixa transparente longa e estreita.
+    \item Aproveitando o fato de que a lógica estava sendo ensinada, os alunos precisaram decifrar três fórmulas na lógica de primeira ordem para encontrar a ordem de três xícaras numeradas.
+    \item Tinta invisível foi usada para escrever informações importantes sob a cama de Anita. Durante o jogo, os alunos encontraram uma lanterna de luz negra e uma pista do livro de Calvin e Hobbes, "Monstros debaixo da cama".
+\end{itemize}
+
+\subsection{Beta tests}
+
+Antes da implementação final com os alunos, professores voluntários testaram ambos os jogos. Muitas pistas foram repensadas na época. Para EscapulISTe? -LP, nosso estudo piloto, cinco alunos de CS também foram convidados a jogar o jogo. Com o feedback deles, conseguimos entender quais desafios eram muito complicados ou muito fáceis. Para o EscapulISTe? -LA, vários alunos de diferentes anos e graus se ofereceram para testá-lo. Um debriefing ocorreu após cada sessão experimental e o feedback geral permitiu uma reflexão sobre a experiência e promoveu várias correções. Em relação às orientações para reorganizar a sala, o designer do jogo forneceu uma lista detalhada com os códigos do armário e as 25 etapas necessárias para ter todos os objetos na posição correta. Esta foi uma peça fundamental e professores / equipe organizadora responsáveis pelas implementações praticaram a tarefa de antemão, várias vezes. Se algo falhasse, a próxima implementação seria comprometida.
+
+\subsection{Avaliação}
+
+O EscapulISTe? -LA foi proposto aos 90 alunos matriculados no primeiro ano de Ciência da Computação, em novembro de 2019, antes do exame de meio de semestre. Embora a atividade fosse opcional, teria um impacto irrisório na nota final (cerca de 1,5\%). Aconteceu durante oito dias da semana, duas equipes por dia. Os alunos foram organizados em equipes (5 alunos cada), inscrevendo-se previamente num sistema de matrícula desenvolvido por um aluno bolseiro. Este registro online facilitou a organização das equipes de alunos por vagas disponíveis e nos permitiu manter um registro da participação dos alunos. Dos 90 alunos, 79 alunos se inscreveram para a atividade. Desta vez não houve “spoilers” e cada grupo demorou entre 40 a 55 minutos para resolver os desafios. Novamente, após cada sessão, um breve debriefing foi feito. Quando todas as equipes terminaram a atividade, um questionário foi realizado através do nosso Sistema de Gestão de Aprendizagem (LMS). Dos 90 alunos, foram coletadas 66 respostas (8 mulheres e 58 homens), 63 respostas de alunos que participaram do EscapulISTe? -LA e 3 de alunos que não participaram. Além disso, em conversas informais com os organizadores, eles puderam compartilhar sua experiência sobre se sentirem às vezes frustrados durante a atividade, mas felizes por terem superado isso com a ajuda do grupo.
+
+
+
+\subsection{EscapulISTe? -LP Feedback dos alunos}
+
+EscapulISTe? -LP foi o piloto e o objetivo principal foi obter insights a partir da experiência. Sete equipes (3-6 alunos) participaram (um total de 33 alunos do primeiro ano de CS), até o final do semestre da primavera. Se algum dos desafios for muito complicado, eles adicionam acesso a “spoilers”, já que as soluções dos desafios foram escritas no verso de quadros coloridos (Figura 2). Após cada sessão, um breve debriefing foi feito. Alguns dos grupos marcaram um ou dois “spoilers”, mas a maioria dos alunos conseguiu “escapar” sem ajuda, geralmente em cerca de 45 minutos.
+
+Os alunos foram convidados a dar feedback informal, com a possibilidade de anonimato. Temos 24 respostas, e apenas comentários positivos como: “foi muito bom! [...] reveja o materiais [...] realmente criativos ”,“ Foi uma experiência legal. [...]
+muitos tópicos foram revisados [...] formas alternativas de estudar,
+mais divertida e também diferente ”,“ Legal !!!! ”.
+
+\subsection{Avaliação do EscapulISTe? -LA}
+
+
 
 \section{Mapeamento Sistemático de Autorregulação da Aprendizagem}
 
