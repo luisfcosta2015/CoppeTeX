@@ -487,6 +487,111 @@ Para que pudéssemos sistematizar a extração dos dados dos estudos, criamos um
     \item\textbf{Resultados negativos da aplicação de questionários} -O objetivo deste campo é extrair dados sobre quais foram os resultados negativos da aplicação dos Quizzes encontrados pelo estudo. Por estarmos cientes dos aspectos negativos, podemos tentar minimizá-los para responder \textbf{RQ$_5$ -  Como podemos melhorar o uso de quizzes na educação em engenharia de software?}.
 \end{itemize}.
 
+\subsection{Conduzindo a Pesquisa}
+
+A seleção dos estudos utilizou um procedimento de filtragem em duas etapas: a primeira etapa envolveu a leitura dos estudos e filtrá-los de acordo com se um estudo individual está relacionado à nossa pesquisa; enquanto a segunda etapa envolveu um sistema de pontuação, em que os estudos pré-selecionados da etapa anterior foram analisados detalhadamente para determinar o grau de resposta à pesquisa (ou seja: total, parcialmente ou não todos). Em seguida, a extração foi realizada consolidando as informações relevantes contidas nos estudos. Por fim, foi realizada uma análise do resultado da etapa anterior para que pudéssemos responder às questões de pesquisa.
+
+A pesquisa que conduzimos teve as seguintes etapas em ordem:
+\begin{enumerate}
+
+    \item \emph{Search} - Nesta etapa, pesquisamos os repositórios selecionados para a string de pesquisa definida anteriormente. Isso nos permite obter uma lista de estudos que correspondem à nossa string de pesquisa, que usaremos na próxima etapa.
+
+    \item \emph{Import Studies} - Esta etapa permite importar as meta-informações dos estudos (resumo, autores, data, etc.) para manter um banco de dados para gerenciar as próximas etapas.
+
+    \item \emph{Study Selection} - Durante esta etapa, aceitamos ou rejeitamos os estudos em nosso banco de dados de acordo com os critérios que definimos durante o planejamento.
+
+    \item \emph{Quality Assessment} - Aqui, aplicamos a Lista de Verificação de Avaliação de Qualidade previamente definida aos estudos de nosso banco de dados que foram aceitos na etapa de Seleção de Estudos para pontuá-los individualmente.
+
+    \item \emph{Data Extraction} - Usamos o Formulário de Extração de Dados criado anteriormente para extrair os dados relevantes para nossa pesquisa dos estudos em nosso banco de dados que pontuaram acima de 3,0 na etapa anterior.
+    
+
+    \item \emph{Data Analysis} - Analisamos os dados que resultaram da aplicação de nossa metodologia de pesquisa.
+\end{enumerate}
+
+\subsection{Resultados}
+
+Nesta seção, os resultados da revisão são apresentados e analisados.
+
+\subsection{Search}
+A execução de nossa consulta de pesquisa retornou um total de 68 estudos, dos quais tínhamos 0 duplicatas.
+
+\subsection{Study Selection}
+Nossa análise dos estudos obtidos durante a Pesquisa nos fez rejeitar 46 estudos porque eles não eram relevantes para as nossas questões de pesquisa.
+
+\subsection{Quality Assessment}
+Em seguida, pontuamos os 22 estudos restantes usando a Lista de verificação de avaliação de qualidade definida anteriormente, o que resultou na manutenção dos 13 estudos. Uma visão geral dos resultados pode ser mostrada em \textbf{Table\ref{tab:quality_assessment}}.
+
+\begin{table}[ht]
+    \centering
+        \caption{Visão geral das pontuações de avaliação da qualidade dos estudos}
+        \begin{tabular}{c|c}
+            \hline
+                \textbf{Score} & \textbf{Número de estudos} \\
+            \hline
+            \hline
+                0 & 
+                1 \\
+            \hline
+                1 & 
+                2 \\
+            \hline
+                2 & 
+                6 \\
+            \hline
+                3 & 
+                1 \\
+            \hline
+                4 & 
+                12 \\
+            \hline
+        \end{tabular}
+    \label{tab:quality_assessment}
+\end{table}
+
+\subsection{Data Extraction}
+
+Em nossa revisão, obtivemos informações relevantes sobre quizzes em cursos de engenharia de software \cite{figueiredo_evaluation_2014}, bem como revisões sistemáticas de trabalhos que aplicaram questionários neste contexto educacional, tais como \cite{luxton-reilly_introductory_2018} e \cite {crow_intelligent_2018} . Também encontramos estudos que avaliam resultados em um ambiente de sala de aula invertida que trabalha com aprendizagem autorregulada, como \cite{ogawa_evaluation_2018} e \cite{herold_student_2012}. Práticas de aprendizagem dos alunos, como \cite{thevathayan_imparting_2017} e \cite{verdu_distributed_2012}. Um desses estudos, \cite{wu_improvement_2011} apresentou uma proposta para um conceito de jogo de aula que pode melhorar a comunicação e motivar os alunos por meio de aulas mais interessantes e sem descrever claramente como os alunos podem melhorar sua autorregulação da aprendizagem em sala de aula, este estudo pode fornecer questões importantes sobre a motivação dos alunos para autorregulação da aprendizagem  e o interesse pelo jogo, neste caso um jogo de perguntas multiplayer chamado Lecture Quiz.
+
+\textbf{Table \ref{tab:quizzes_application_types}} mostra os dados extraídos relacionados ao \textbf{Tipo de Aplicação de Quizzes}.
+
+\begin{table}[ht]
+    \centering
+        \caption{Tipos de aplicação de quizzes}
+        \begin{tabular}{c|c|c}
+            \hline
+                \textbf{Tipos de aplicação de quizzes} & \textbf{Número de Estudos}  & \textbf{Estudos} \\
+            \hline
+            \hline
+                Quiz Games & 
+                4 &
+                \cite{petri_quality_2017, petri_games_2018, verdu_distributed_2012, wu_improvement_2011} \\
+            \hline
+                Online Quizzes & 
+                4 & 
+                \cite{figueiredo_evaluation_2014, coore_facilitating_2019, luxton-reilly_introductory_2018, krugel_computational_2017} \\
+            \hline
+                Pop-Quizzes & 
+                1 &
+                \cite{luxton-reilly_introductory_2018} \\
+            \hline
+                Gamified Quizzes & 
+                1 & 
+                \cite{luxton-reilly_introductory_2018} \\
+            \hline
+                Quiz Creation & 
+                1 & 
+                \cite{ogawa_evaluation_2018} \\
+            \hline
+                Generic Quizzes & 
+                5 & 
+                \cite{crow_intelligent_2018, ogawa_evaluation_2018, acharya_infusing_2017, thevathayan_imparting_2017, herold_student_2012} \\
+            \hline
+        \end{tabular}
+    \label{tab:quizzes_application_types}
+\end{table}
+
+
+
 \section{Análise de dados no MOOC Técnico}
 
 Neste relatório faz-se a análise de dados de três edições consecutivas dos cursos online “Controlo e Simulação de Drones” (droneX) e “Transformação Digital” (tdX), disponibilizados na Plataforma MOOC Técnico 1 . No primeiro caso, droneX, referimonos às edições de 2018, 2019 e 2020 e no segundo , tdX, considerámos as edições de 2017, 2018 e 2020. O nosso objetivo é analisar o comportamento de adesão dos 2
