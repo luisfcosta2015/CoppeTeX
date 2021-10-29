@@ -294,6 +294,199 @@ Neste seção, a implementação de dois EEGs foi descrita. Avaliamos a experiê
 
 \section{Mapeamento Sistemático de Autorregulação da Aprendizagem}
 
+Esta seção discute como quizzes são aplicados no campo do aprendizado da engenharia de software e como os quizzes podem ajudar a autorregular o aprendizado do aluno. Para isso, foi realizado um mapeamento sistemático que selecionou os estudos mais relevantes sobre o uso de quizzes na educação, com o objetivo de esclarecer suas relações e impactos mútuos. Nossa análise mostra que o envolvimento do aluno e o trabalho com quizzes são soluções de aprendizagem proeminentes para aumentar a motivação dentro e fora da sala de aula. Argumentamos que compartilhar os quizzes aumentará o potencial para que eles sejam usados como uma ferramenta de autorregulação no ensino de engenharia de software. 
+
+\subsection{Introdução}
+
+A forma de aprendizagem do aluno muda, principalmente com o uso de ferramentas tecnológicas \cite{nilson_creating_2013, fink_creating_2013, ebert_school_2013}. Apesar disso, os tipos de aprendizagem ativa têm como objetivo principal colocar o aluno no centro do processo de aprendizagem e não necessariamente focado no uso da tecnologia. Exemplos disso ocorrem até mesmo nas abordagens utilizadas desde a época de Aristóteles (384 aC-322 aC) \cite{berge_computer_1995}, como uma aula onde os alunos ficam sentados em uma roda, discutindo e refletindo, entre todos, um assunto específico.
+
+Um dos elementos tecnológicos utilizados como recurso de aprendizagem são os quizzes. O uso de quizzes para aprendizagem existem há muitos anos desde que foi discutido pela primeira vez \cite{mawhinney_comparison_1971}. Os quizzes têm sido usados no ensino médio, como uma ferramenta de avaliação e para apoiar outros métodos ou técnicas educacionais em vários campos diferentes, incluindo cursos de engenharia \cite{herold_student_2012, thevathayan_imparting_2017, figueiredo_evaluation_2014}. 
+
+Grimstad \cite {grimstad_are_2004} encontrou resultados que indicam que os alunos podem usar quizzes para melhorar seu desempenho no exame. Para que essa melhoria de desempenho ocorra, Bangert-Drowns \cite {bangert-drowns_instructional_1991} analisou que o feedback está relacionado à aprendizagem e concluiu que os alunos aprendem mais se receberem a resposta correta somente após responder a uma pergunta. Também descobriu que o feedback corretivo é melhor do que simplesmente dizer aos alunos que eles estavam certos ou errados, o que significa que é importante orientar o aluno para as áreas de conteúdo onde ele precisa de revisão ou estudo adicional. Isso se deve ao fato de que, segundo o autor, promove uma estratégia com aspectos de preparação, execução, feedback e autorreflexão.
+
+Para melhor esclarecer o estado atual da pesquisa, envolvendo a utilização de quizzes, na educação e, principalmente, no ensino de Engenharia de Software, realizamos um mapeamento sistemático. Este mapeamento tem como objetivo principal construir uma base de conhecimento que permita explorar quizzes, como ferramenta de aprendizagem autorregulada, no ensino de Engenharia de Software.
+
+Para isso, nosso estudo apresenta as seguintes questões de pesquisa:
+
+\begin {itemize}
+    \item\textbf {RQ $ _1 $ - Os quizzes são usados no ensino de engenharia de software?}
+     \item\textbf {RQ $ _2 $ - Como os quizzes são usados no ensino de engenharia de software?}
+     \item\textbf {RQ $ _3 $ - Os quizzes são usados na educação em engenharia de software para a autorregulação da aprendizagem?}
+     \item\textbf {RQ $ _4 $ - Como a aplicação de Quizzes no Ensino de Engenharia de Software pode ser utilizada na Autorregulação da Aprendizagem?}
+     \item\textbf {RQ $ _5 $ - Como podemos melhorar o uso de Quizzes no Ensino de Engenharia de Software?}
+\end {itemize}
+
+Para responder a essas perguntas, realizamos uma revisão de mapeamento em cinco seções, começando com a introdução (seção 1) e, em seguida, progredindo da seguinte forma: a seção 2 apresenta uma breve revisão dos questionários; A seção 3 inclui os conceitos e metodologia usados neste trabalho; a seção 4 cobre os resultados e nossa análise de pesquisa; E finalmente, na seção 5, nossas conclusões são apresentadas.
+
+\subsection{Educação e Quizzes}
+
+Anderson \cite{anderson_reflections_1984} discutiu e analisou questões sobre processos educacionais. Esses processos incluíam fontes de motivação, como crenças de autoeficácia, gratificação atrasada, atribuições, valores e interesses. Bem como fontes de metacognição como estabelecimento de metas, uso de estratégia, automonitoramento e autoavaliação.
+
+Recentemente, devido aos mais recentes desenvolvimentos em recursos tecnológicos, métodos, dinâmicas e elementos motivacionais, a educação tem transformado os métodos tradicionais de ensino em novos conceitos de aprendizagem, como a sala de aula invertida e a aprendizagem autorregulada.
+
+A sala de aula invertida é uma pedagogia baseada em tecnologia. Bishop e Verleger\cite {bishop_flipped_2013} definem este tipo de aprendizagem como uma instrução individual direta, baseada em computador, fora da sala de aula. Além disso, segundo os autores, esse processo também é realizado por meio de vídeo-aulas e atividades interativas de aprendizagem em grupo em sala de aula.
+
+Como resultado de todas essas transformações na educação, a visão atual da tarefa do aluno na educação mudou para descobrir como aprender novos conhecimentos, em vez de criar verdades e conhecimentos únicos \cite{ebert_school:_2013}. Ao refletir sobre suas ações e como encontrar novos conhecimentos, o aluno pode descobrir por si mesmo como superar seus próprios desafios.
+
+Berge \cite{berge_computer_1995} compara a prática da sala de aula invertida com a abordagem baseada no diálogo praticada na Grécia antiga, onde as pessoas aprendiam por meio de desafios e atividades da vida real, compartilhando seus próprios pensamentos e opiniões a fim de encontrar soluções para seus problemas.
+
+Zimmerman e Risemberg \cite{zimmerman_chapter_1997} explicaram as implicações dos diferentes componentes da aprendizagem autorregulada, ressaltando que as tarefas propostas devem permitir que os alunos tomem decisões pessoais e ponderadas com o intuito de regular seus processos de aprendizagem. Com base nessas implicações, o modelo cíclico de Zimmerman \cite{zimmerman_chapter_2000} foi estabelecido (uma representação esquemática está incluída na Fig.\Ref {fig:Zimmerman Model}). De acordo com Zimmerman, a aprendizagem autorregulada visa definir o processo de aprendizagem e as crenças motivacionais de um aluno com base em três fases de autorregulação: Forethought, Performance e Self-Reflection \cite {zimmerman_investigating_2008}.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{chaps/Images/Zimmerman.png}
+\caption{Zimmerman Cyclic Model.}
+\label{fig:Zimmerman Model}
+\end{figure}
+
+A aprendizagem autorregulada também foi considerada importante nas formas sociais de aprendizagem, como buscar ajuda externa de outras pessoas que não o professor. A questão principal é se o aluno demonstra iniciativa pessoal e capacidade de adaptação. Essas qualidades dos alunos derivam de crenças e sentimentos motivacionais vantajosos \cite{zimmerman_chapter_2000}.
+
+De acordo com Anderson et al. \cite{anderson_taxonomy_2000}, existem dois tipos de avaliação. O primeiro tipo é a avaliação somativa, em que as informações são coletadas pós-aprendizagem para determinar o quão bem o aluno aprendeu o material. O outro tipo é a avaliação formativa, que se preocupa com a coleta de informações sobre o aprendizado e é projetada para melhorar a qualidade ou a quantidade do aprendizado.
+
+Os quizzes são normalmente usados para fazer os testes de avaliação de conhecimentos e habilidades de um aluno. Os quizzes não devem ser entendidos apenas como avaliações sumativas, mas sim como uma experiência de aprendizagem para os alunos, avaliando a eficácia das suas estratégias de estudo e preparação para o teste \cite{nilson_creating_2013}. Como tal, são um dos elementos que podem ser aplicados na educação para melhorar a aprendizagem autorregulada.
+
+É importante considerar que aprender a usar o material de estudo é tão importante quanto aprender o próprio material. Desta forma os alunos irão avaliar suas estratégias e se preocupar com seu desempenho, aprimorando-as adequadamente \cite{fink_creating_2013}. Para tanto, Zimmerman sugere que os alunos devem primeiro ser solicitados a expressar sua confiança na capacidade de resolver um problema antes de começarem a tentar resolvê-lo e reavaliar sua confiança após resolvê-lo. Depois disso, eles devem ser solicitados a escrever uma análise de erros de todos os problemas que eles não resolveram corretamente. Ao fazer a primeira atividade, os alunos aprendem rapidamente a estudar um problema antes de tentar resolvê-lo; enquanto faz o segundo, permite que eles adquiram estratégias de solução de aprendizagem \cite{zimmerman_enhancing_2011}.
+
+Ottenhoff \cite{ottenhoff_learning_2011} afirma que a literatura sobre aprendizagem autorregulada, metacognição e avaliação oferece várias atividades e tarefas que os alunos podem realizar antes, durante e depois dos exames. Algumas atividades e atribuições tornam os alunos mais conscientes do que aprenderam e não aprenderam, enquanto outras atividades envolvem os alunos na avaliação de estratégias de preparação para o teste e no desenvolvimento de estratégias mais eficazes. Todos eles ajudam a melhorar o foco dos alunos em seu aprendizado. De acordo com Nilson \cite{nilson_creating_2013}, os quizzes podem apoiar a aprendizagem autorregulada, fornecendo oportunidades para várias Atividades e Tarefas que ajudam na aprendizagem autorregulada. Incluem Atividades e Tarefas para Preparação para Exames, Atividades Durante um Exame e Atividades e Tarefas Após Exames e Testes.
+
+Antes dos exames, os alunos podem se preparar estudando e melhorando suas áreas de conhecimento mais fracas, mas existem opções que consomem menos tempo. Ao criar perguntas de teste desenvolvidas pelos alunos (de múltipla escolha ou outros tipos de perguntas), os alunos podem revisar o material e avaliar a importância de diferentes partes do material. A criação de uma Folha de Revisão Criada pelo Aluno que mapeia as principais áreas de conteúdo permite ao aluno estimar a porcentagem do exame que será composta por essa área. Esta folha de revisão pode ser melhorada listando o que os alunos acreditam que eles deveriam ser capazes de fazer ou demonstrar e usar esta folha de revisão para se preparar. Os alunos podem elaborar Pesquisas de Conhecimento Pré-exame (quizzes que lhes pedem para avaliar sua confiança em sua capacidade de responder a perguntas ou realizar tarefas relacionadas ao curso). Isso familiariza os alunos com o objetivo do quiz/exame e revela o conteúdo e as áreas de habilidade nas quais eles são fracos ou fortes, permitindo-lhes estreitar o foco de seu estudo e incentivando o estabelecimento de metas e o autoteste.
+
+Durante um exame, os alunos podem ser solicitados a avaliar sua confiança em sua capacidade de resolver um problema antes e depois de resolvê-lo. Incorporar uma pesquisa de conhecimento em um exame pode permitir que os resultados sejam avaliados pela confiança do aluno neles.
+
+Após um Exame, existem várias oportunidades de aprendizagem autorregulada. Pode-se pedir aos alunos que reflitam sobre o quanto estavam preparados para um quiz e sobre a eficácia de seu método de preparação, permitindo-lhes revisar e reconsiderar seus métodos de preparação e capacidade atual. A devolução de um quiz com notas oferece a oportunidade para os alunos resolverem problemas que perderam anteriormente ou resolverem problemas semelhantes. Se isso for combinado com a autoavaliação pré-questionário ou pré-exame de seus níveis de confiança e da eficácia de seu método de estudo, permite saltos impressionantes no aprendizado do aluno. Os alunos podem responder a perguntas no final de um exame para estimar seu desempenho, para descrever sua preparação e para avaliar a dificuldade em diferentes partes do exame. Isso faz com que os alunos reflitam e prevejam seu desempenho, avaliem sua preparação e a eficácia de seus métodos de preparação, reavaliem sua confiança após receberem o exame com notas e vejam se suas estratégias de preparação estão funcionando. A formalização da reavaliação dos métodos e da confiança de um aluno é possível fazendo com que os alunos respondam por escrito a uma série de perguntas depois de verem seu exame com nota, permitindo assim que os alunos desenvolvam um plano de estudo para o próximo exame com base nos resultados do exame anterior. Usando a análise pós-teste, os alunos são capazes de diagnosticar os padrões por trás de seus erros e, assim, obter o tipo de ajuda de que precisam.
+
+Embora existam muitas questões teóricas e práticas sobre como maximizar os benefícios do uso dos quizzes, interromper o aprendizado com perguntas do questionário é benéfico porque pode melhorar o envolvimento do aluno \cite{healy_timing_2017}. Diversas instituições de ensino adotam clickers, que permitem aos instrutores aplicar questionários de múltipla escolha a qualquer momento durante a aula, com feedback imediato para professores e alunos \cite{smith_why_2009}. De acordo com Harley, há um benefício de aprendizagem para os alunos, proporcionado pela ação de testar seus conhecimentos, pela obtenção de feedback e pela natureza interativa do procedimento do clicker. Para os professores, há o benefício da avaliação por ter a capacidade de manter uma avaliação contínua da compreensão dos alunos e prever sua retenção de aprendizagem após a leitura do material \cite{healy_timing_2017}.
+
+Com o entendimento de que os quizzes podem ser aplicados à educação, apesar do aparente desafio e sobrecarga necessários para preparar e administrar questionários em um contexto educacional, este estudo tem como objetivo investigar como os quizzes podem ser benéficos para a aprendizagem autorregulada, no contexto das aulas de engenharia de software.
+
+\subsection{Metodologia}
+\label{metodo}
+
+O processo de pesquisa utilizado neste trabalho baseia-se na revisão sistemática da pesquisa de processos em engenharia de software \cite{kitchenham_systematic_2013, kitchenham_systematic_2009} e foi conduzida por meio da plataforma Parsif.al \footnote{https://parsif.al/}.
+
+Nosso processo começou com um mapeamento sistemático que nos permite avaliar e selecionar os estudos mais relevantes sobre o uso de quizzes para auxiliar na autorregulação da aprendizagem. Nossa intenção é identificar a utilização de quizzes na autorregulação da aprendizagem no contexto de alunos de graduação, no ensino de engenharia de software.
+
+Exploramos como o ensino de engenharia de software utiliza quizzes, quais são seus tipos, se é utilizado como ferramenta de autorregulação da aprendizagem e quais resultados positivos e negativos foram encontrados. Para nós, é importante entender como eles podem ser usados de diferentes maneiras. Todos os procedimentos de revisão da literatura - como descrição do que foi planejado, seleção da estratégia, condução da pesquisa e relatório final - são descritos a seguir.
+
+\subsection{Research Planning}
+\label{planeja}
+
+Nosso plano de pesquisa foi elaborado contendo: objetivos, questões a responder, busca e seleção, estratégias, avaliação da qualidade e extração de resultados. Nosso planejamento de pesquisa começou com a definição do protocolo para o mapeamento sistemático. Começamos definindo os objetivos de nossa pesquisa:
+\begin{itemize}
+     \item Analisar publicações científicas que abordem o Ensino de Engenharia de Software;
+     \item Analisar publicações científicas que estudam a utilização de Quizzes no Ensino (e em particular como ferramenta pedagógica autorreguladora);
+     \item Elaborar uma Revisão e/ou Mapeamento da literatura sobre `` Ensino e Questionários de Engenharia de Software '';
+     \item Justificar/motivar a criação/implementação de um repositório de Quiz Compartilhado de Engenharia de Software
+\end{itemize}
+
+Nossa próxima etapa foi definir a População, Intervenção, Comparação, Resultado, Contexto (PICOC):
+\begin{itemize}
+     \item População - `` questionários "
+     \item Intervenção - autorregulação da aprendizagem
+     \item Comparação - iniciativa OU modelo OU estrutura OU atividades OU métodos OU técnicas
+     \item Resultado - apoiar OU melhorar OU otimizar OU ajudar OU ajudar OU especificações
+     \item Contexto - Educação em Engenharia de Software
+\end{itemize}
+
+Em seguida, definiu-se as questões de pesquisa:
+\begin{itemize}
+    \item\textbf{RQ $ _1 $ - Os questionários são usados no ensino de engenharia de software?} - O objetivo desta questão é verificar se os questionários são usados como ferramenta de aprendizagem no ensino de engenharia de software.
+    
+\item\textbf{RQ $ _2 $ - Como os Quizzes são usados no Ensino de Engenharia de Software?} - O objetivo desta questão é entender quais tipos de quizzes foram aplicados e como eles foram usados no Ensino de Engenharia de Software.
+
+\item\textbf{RQ $ _3 $ - Os questionários são usados na Educação em Engenharia de Software para a Autorregulação da Aprendizagem?} - O objetivo desta questão é entender quais áreas de pesquisa, relacionadas à autorregulação da aprendizagem, foram afetadas pelo uso de questionários.
+
+\item\textbf{RQ $ _4 $ - Como a aplicação de Quizzes na Educação em Engenharia de Software pode ser utilizada na Autorregulação da Aprendizagem?} - Esta questão busca identificar quais etapas da autorregulação da aprendizagem, com base no modelo cíclico de Zimmerman, foram aplicados, seus resultados e suas falhas de implementação.
+
+\item\textbf{RQ $ _3 $ - Como podemos melhorar o uso de questionários no ensino de engenharia de software?} - Esta questão busca identificar possíveis melhorias no uso atual de questionários no ensino de engenharia de software.
+\end{itemize}.
+
+Em relação às palavras-chave e sinônimos, selecionamos as seguintes palavras-chave, mas optamos por não definir nenhum sinônimo para evitar a obtenção de resultados que escapassem ao escopo deste trabalho:
+
+\begin{itemize}
+     \item Quiz
+     \item Aprendizagem de Autorregulação
+     \item Educação em Engenharia de Software
+\end{itemize}
+
+Escolhemos o banco de dados de estudos Scopus \footnote{http://www.scopus.com} como nossa fonte. Para a busca de artigos, utilizamos artigos dos últimos 5 anos em nossas fontes selecionadas. Definimos a seguinte string de pesquisa \emph{`` quiz "AND` `Educação em Engenharia de Software"}.
+
+Definimos vários critérios de inclusão e exclusão para que pudéssemos aceitar ou rejeitar os estudos que obtivemos em nossa busca. Estes são mostrados em \textbf{Tabela\ref{tab:criteria}}.
+
+\begin{table}[ht]
+    \centering
+        \caption{Critérios de inclusão e exclusão para estudos}
+        \begin{tabular}{p{65mm}|p{65mm}}
+            \hline
+                \textbf{Critérios de inclusão} & \textbf{Critérios de exclusão} \\
+            \hline
+            \hline
+                O estudo apresenta métodos e técnicas possíveis & O estudo aborda questionários fora do contexto da engenharia de software 
+                \\
+            \hline
+                O estudo apresenta possíveis implicações (vantagens e desvantagens)  &
+                O estudo é um capítulo de um livro ou editorial \\
+            \hline
+                O estudo apresenta questões relacionadas à nossa pesquisa  &
+                O estudo não está disponível para leitura \\
+            \hline
+                 - &
+                O estudo não está relacionado às questões de pesquisa \\
+            \hline
+                 - &
+                O estudo não foi publicado em inglês \\
+            \hline
+        \end{tabular}
+    \label{tab:criteria}
+\end{table}
+
+Após finalizar a definição do protocolo, definimos uma Lista de Verificação de Avaliação da Qualidade que nos permitiu avaliar a qualidade de cada um dos estudos aceitos.
+
+A lista de verificação foi composta por duas questões que consideramos adequadas aos objetivos de nossa pesquisa:
+
+\begin {itemize}
+     \item No artigo foram encontrados - Auto-regulação da aprendizagem - afetada pelo uso de quizzes?
+     \item No artigo foram encontrados - tipos de quizzes - aplicados no ensino de engenharia de software?
+\end{itemize}
+
+Definimos três respostas para as questões e seus respectivos pesos. Eles são mostrados em \textbf {Tabela\ref{tab:scoring_weight}}.
+
+\begin{table}[ht]
+    \centering
+        \caption{Respostas da pergunta da lista de verificação de avaliação de qualidade e respectivo peso}
+        \begin{tabular}{c|c}
+            \hline
+                \textbf{Responder} & \textbf{Peso} \\
+            \hline
+            \hline
+                Sim & 2.0 \\
+            \hline
+                Parcial & 1.0 \\
+            \hline
+                Não & 0.0 \\
+            \hline
+        \end{tabular}
+    \label{tab:scoring_weight}
+\end{table}
+
+A pontuação máxima foi calculada automaticamente (4,0) e optamos por um Cutoff Score (que nos permite descartar qualquer estudo que ficasse abaixo da pontuação escolhida) de 3,0.
+
+Para que pudéssemos sistematizar a extração dos dados dos estudos, criamos um Formulário de Extração de Dados que nos ajudaria a encontrar as respostas às nossas dúvidas de pesquisa nos seguintes campos:
+
+\begin{itemize}
+    \item \textbf{Tipo de Aplicação de Quizzes} - O objetivo deste campo é extrair dados sobre como os questionários foram aplicados à Engenharia de Software (tipos de questionários). Nos permite responder \textbf{RQ$_1$ - Os quizzes são usados no ensino de engenharia de software?} e \textbf{RQ$_2$ -  Como os quizzes são usados na educação em engenharia de software?}.
+    
+    \item \textbf{Contexto onde os quizzes foram aplicados} - O objetivo deste campo é extrair dados sobre o contexto onde os quizzes foram aplicados (a que tipo de curso ou sistema os questionários foram aplicados e quando foram aplicados). Isso nos ajudará a encontrar respostas para \textbf{RQ$_1$ - Os quizzes são usados no ensino de engenharia de software?} e \textbf{RQ$_2$ -  Como os quizzes são usados na educação em engenharia de software?}.
+    
+    \item \textbf{Fases do modelo cíclico de Zimmerman consideradas implícita ou explicitamente} - O objetivo deste campo é extrair dados sobre quais fases do Modelo Cíclico de Zimmerman foram envolvidas ou consideradas no estudo devido à aplicação de questionários. Isso nos ajudará a encontrar respostas para \textbf{RQ$_3$ -  Os quizzes são usados na Educação em Engenharia de Software para a Autorregulação da Aprendizagem?} and \textbf{RQ$_4$ -  Como a aplicação de Quizzes no Ensino de Engenharia de Software pode ser utilizada na Autorregulação da Aprendizagem?}.
+
+    \item \textbf{Tipos de Atividades (Antes, Durante ou Depois do Exame/Questionário) considerada implícita ou explicitamente} - O objetivo deste campo é extrair dados sobre quais tipos de Atividades foram envolvidas ou examinadas no estudo devido à aplicação de questionários. Como o campo anterior, ele nos ajudará a encontrar respostas para \textbf{RQ$_3$ -  Os quizzes são usados na Educação em Engenharia de Software para a Autorregulação da Aprendizagem?} e \textbf{RQ$_4$ -  Como a aplicação de Quizzes no Ensino de Engenharia de Software pode ser utilizada na Autorregulação da Aprendizagem?}.
+    
+    \item \textbf{Resultados positivos da aplicação de questionários} - O objetivo deste campo é extrair dados sobre quais foram os resultados positivos da aplicação dos Quizzes encontrados pelo estudo. Seremos capazes de olhar para os aspectos positivos da aplicação de quizzes em engenharia de software que podem nos ajudar a raciocinar sobre \textbf{RQ$_5$ -  Como podemos melhorar o uso de quizzes na educação em engenharia de software?}.
+    
+    \item\textbf{Resultados negativos da aplicação de questionários} -O objetivo deste campo é extrair dados sobre quais foram os resultados negativos da aplicação dos Quizzes encontrados pelo estudo. Por estarmos cientes dos aspectos negativos, podemos tentar minimizá-los para responder \textbf{RQ$_5$ -  Como podemos melhorar o uso de quizzes na educação em engenharia de software?}.
+\end{itemize}.
+
 \section{Análise de dados no MOOC Técnico}
 
 Neste relatório faz-se a análise de dados de três edições consecutivas dos cursos online “Controlo e Simulação de Drones” (droneX) e “Transformação Digital” (tdX), disponibilizados na Plataforma MOOC Técnico 1 . No primeiro caso, droneX, referimonos às edições de 2018, 2019 e 2020 e no segundo , tdX, considerámos as edições de 2017, 2018 e 2020. O nosso objetivo é analisar o comportamento de adesão dos 2
